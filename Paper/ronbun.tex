@@ -1,0 +1,84 @@
+\documentclass[12pt,oneside,dvipdfmx]{paper}
+
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{saucecode}
+
+\lstset{%
+  language={C},
+  basicstyle={\small},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape},%
+  keywordstyle={\small\bfseries},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex%
+}
+
+
+
+% タイトル
+\title{ロボコン用高出力モータードライバの開発}
+\author{東出和賢}
+
+\begin{document}
+% 行間
+\setlength{\baselineskip}{9truemm}
+
+%文字間
+\kanjiskip=.53zw plus 3pt minus 3pt
+\xkanjiskip=.53zw plus 3pt minus 3pt
+
+% 目次
+\tableofcontents
+%\newpage
+
+% 本文
+\input{1_hazimeni.tex}
+
+\input{2_ITOLABMOTORDRIVER.tex}
+
+\input{3_robokonyou.tex}
+
+\input{4_owarini.tex}
+
+
+
+
+
+
+\chapter*{謝辞}
+\addcontentsline{toc}{chapter}{謝辞}
+ロボット作成時に,知識の少ない電気分野を丁寧にご指導,サポートして下さった林道大教授,
+ロボット作成時に,予定が遅れていた時に喝を入れて下さったり本論文作成にあたり研究の考
+え方,方法のまとめ方などご指導,ご鞭撻していただいた伊藤恒平教授に厚く御礼申し上げます．
+
+特に回路作成時に指導していただいたり,不得意なプログラムを助けて頂いた林道大教授に大変
+ご苦労をかけてしまいましたこと心よりお詫び申し上げます．
+
+その他,助けていただいた多くの皆様に心から感謝しております.ありがとうございました．
+
+\appendix
+\input{5_sankou.tex}
+
+\input{6_huroku.tex}
+
+
+
+
+\end{document}
+
+
+
+
+
+
